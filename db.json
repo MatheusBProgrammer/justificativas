@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "name": "Matheus",
+      "cpf": "123",
+      "ubs": "Sede"
+    },
+    { "name": "teste", "cpf": "teste", "ubs": "testando ubs" }
+  ]
+}

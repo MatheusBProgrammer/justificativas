@@ -1,0 +1,16 @@
+.input {
+  margin: 1.4em;
+}
+
+.input input {
+  border: solid 0.1px black;
+  width: 20em;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input label {
+  font-weight: bold;
+  margin-right: 0.3em;
+}

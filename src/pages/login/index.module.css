@@ -1,0 +1,24 @@
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  min-height: 400px;
+}
+
+.form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  height: 30vh;
+  min-height: 200px;
+}
+
+.form label {
+  margin-right: 30px;
+}
