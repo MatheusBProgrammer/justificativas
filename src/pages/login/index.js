@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./index.module.css";
 import Input from "../../components/formComponents/Input";
 import Button from "../../components/formComponents/Button";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 
 function Index() {
   const [dataUser, setDataUser] = useState({});
+  const navigate = useNavigate();
+  const { setUser } = useContext(AuthContext);
 
   function handleChange(e) {
-    setDataUser({ [e.target.name]: e.target.value });
+    setDataUser({ ...dataUser, [e.target.id]: e.target.value });
     console.log(dataUser);
   }
 
@@ -22,7 +26,10 @@ function Index() {
     })
       .then((resp) => resp.json())
       .then((data) => data.find((user) => user.cpf === dataUser.cpf))
-      .then((data) => console.log(data))
+      .then((data) => {
+        setUser(data.name);
+      })
+      .then((data) => navigate("/home"))
 
       .catch((err) => console.log(err));
   }
@@ -35,7 +42,7 @@ function Index() {
         <form className={styles.form}>
           <Input
             name={"cpf"} // Deve corresponder ao campo no estado dataUser
-            text={"Nome"}
+            text={"cpf"}
             placeholder={"Digite seu cpf"}
             handleOnchange={handleChange}
           />
