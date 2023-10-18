@@ -27,7 +27,7 @@ function Index() {
       .then((resp) => resp.json())
       .then((data) => data.find((user) => user.cpf === dataUser.cpf))
       .then((data) => {
-        setUser(data.name);
+        setUser(data);
       })
       .then((data) => navigate("/home"))
 

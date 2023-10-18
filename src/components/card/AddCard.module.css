@@ -1,0 +1,72 @@
+.card {
+  background-color: #00ced1;
+  border: 1px solid #222;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 18.5em;
+}
+.label {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin: 0.5em;
+  font-weight: bold;
+}
+.form {
+  padding: 15px;
+  margin: 5px;
+}
+.form label {
+  border-bottom: 1px solid black;
+  font-family: "Open Sans", sans-serif;
+
+  font-weight: bold;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0ffff;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+  color: white;
+  background-color: #00505a;
+}
+
+.button svg {
+  font-size: 22px;
+}
