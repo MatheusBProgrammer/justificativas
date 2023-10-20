@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <Navbar user={user?.name} />
+      <Navbar user={user?.name} ubs={user?.ubs} />
       <Outlet />
       <Footer />
     </div>

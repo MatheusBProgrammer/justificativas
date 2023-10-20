@@ -1,9 +1,32 @@
 .navbar {
+  width: 100%;
   color: white;
   height: 2em;
   background-color: #222;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 3em;
+}
+.blank_space {
+  flex: 1;
+}
+
+.titulo {
+  text-align: center;
+  flex: 1;
+}
+.dados {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 15px;
+  font-size: 0.5em;
+  align-items: end;
+}
+
+.dados .user {
+  font-weight: bold;
 }

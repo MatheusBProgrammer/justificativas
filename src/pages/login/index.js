@@ -51,6 +51,7 @@ function Index() {
             text={"senha"}
             placeholder={"Digite sua senha"}
             handleOnchange={handleChange}
+            type={"password"}
           />
           <Button value={"Entrar"} submit={submit} />
         </form>

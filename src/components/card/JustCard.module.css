@@ -1,16 +1,31 @@
+/* JustCard.module.css */
+
 .card {
-  background-color: #b0e0e6;
-  border-radius: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 10px;
   width: 300px;
   height: 18.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente ao passar o mouse */
+}
+
 .data {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
 }
+
 .chave_data {
   font-weight: bold;
 }
@@ -18,7 +33,6 @@
 .justificativa {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -26,4 +40,20 @@
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.valor_justificativa {
+  font-size: 1.2em;
+}
+
+.botao {
+  border: none;
+  display: flex;
+  justify-content: end;
+}
+
+.botao button svg {
+  border-radius: 10px;
+  font-size: 2em;
+  color: red;
 }
